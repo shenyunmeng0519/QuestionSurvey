@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pinggu">
+
+    <RelativeLayout
+        android:id="@+id/rl_touming"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/touming_bg">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_zs" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tl_tu"
+        android:layout_width="650dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@mipmap/pinggu_kuang">
+
+        <ImageView
+            android:id="@+id/iv_jieguo1"
+            android:layout_width="120dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_jieguo" />
+
+        <TextView
+            style="@style/count_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toLeftOf="@+id/tv_name"
+            android:text="会员名称："
+            android:textColor="@color/cs_000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/count_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="35dp"
+            android:text="名字"
+            android:textColor="@color/cs_000000"
+            android:textSize="25sp" />
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="180dp">
+-->
+            <!--<TextView
+                android:id="@+id/tv_jieguo01"
+                style="@style/jieguo_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="40dp"
+                android:text="是痰湿质，是淤血质，是特禀质，倾向是阴虚质"
+                android:textColor="@color/cs_66333333"
+                android:textSize="34sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_jieguo02"
+                style="@style/jieguo_text2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="40dp"
+                android:padding="0.3px"
+                android:text="是痰湿质，是淤血质，是特禀质，倾向是阴虚质"
+                android:textColor="@color/cs_ffffff"
+                android:textSize="34sp" />-->
+            <RelativeLayout
+                android:layout_below="@+id/tv_name"
+                android:layout_width="390dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="220dp">
+            <com.zeacen.question.comm.StrokeTextView2
+                android:id="@+id/tv_jieguo03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="1px"
+                android:text="是痰湿质是痰湿质是淤血质是淤血质，是淤血质，是特禀质，倾向是痰湿质，是淤血质，是特禀质，倾向"
+                android:textSize="36sp"
+                android:visibility="visible"
+                app:innnerColor="#f4aa5c"
+                app:outerColor="@color/cs_fa8f1f" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_pinggu1"
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        android:layout_alignLeft="@+id/tl_tu"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="110dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_pinggu" />
+
+    <ImageView
+        android:id="@+id/iv_fangan"
+        android:layout_width="230dp"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tl_tu"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/fangan" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/touming_bg">
+
+        <TextView
+            style="@style/count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="技术支持：正生集团"
+            android:textColor="@color/cs_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

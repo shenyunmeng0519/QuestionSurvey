@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/fangan_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_touming"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/touming_bg">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_zs" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_touming"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/huajuan">
+        <com.zeacen.question.comm.StrokeTextView3
+            android:id="@+id/iv_ganyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/cs_333333"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="体质干预方案"
+            app:innnerColor="@color/cs_333333"
+            app:outerColor="@color/cs_333333"
+            />
+        <ScrollView
+            android:layout_below="@+id/iv_ganyu"
+            android:layout_above="@+id/zixun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@color/cs_999999"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:lineSpacingExtra="4dp"
+                android:text="音乐及其他调摄：宜音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格音乐及其他调摄：宜选择激昂高亢、令人振奋的音乐，以培养开朗、豁达的性格"
+                android:textColor="@color/cs_333333"
+                android:textSize="25sp" />
+        </ScrollView>
+        <ImageView
+            android:id="@+id/zixun"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="85dp"
+            android:src="@mipmap/ic_zixun"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_fanhui"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_next"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 返回"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/cs_ffffff"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/touming_bg">
+
+        <TextView
+            style="@style/count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="技术支持：正生集团"
+            android:textColor="@color/cs_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

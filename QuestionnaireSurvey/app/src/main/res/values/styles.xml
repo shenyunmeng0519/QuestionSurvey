@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="count_text">
+        <item name="android:textColor">@color/cs_333333</item>
+        <item name="android:shadowColor">@color/cs_99333333</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2.3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+    <style name="count_text2">
+        <item name="android:textColor">@color/cs_000000</item>
+        <item name="android:shadowColor">@color/cs_B3000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="jieguo_text">
+        <item name="android:textColor">@color/cs_fe8200</item>
+        <item name="android:shadowColor">@color/cs_99333333</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">2.3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+    <style name="jieguo_text2">
+        <item name="android:textColor">@color/cs_ffffff</item>
+        <item name="android:shadowColor">#ccc</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="Theme_Dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 无标题 -->
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景模糊 -->
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+    <declare-styleable name="StrokeTextView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

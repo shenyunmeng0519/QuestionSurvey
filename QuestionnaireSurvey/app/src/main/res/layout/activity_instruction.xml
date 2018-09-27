@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/shuoming_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_touming"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/touming_bg">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_zs" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/shuoming2">
+
+        <TextView
+            android:id="@+id/tv_biaoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="九种体质"
+            android:textColor="@color/cs_333333"
+            android:textSize="35sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_biaoti"
+            android:layout_marginBottom="135dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="15dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@color/cs_999999"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tv_neirong"
+                android:layout_marginRight="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text="中医体中医体质量化辨识与调养指导旨在为体质辨识及与中医体质相关疾病的防治中医体质量化辨识与调养指导旨在为体质辨识及与中医体质相关疾病的防治中医体质量化辨识与调养指导旨在为体质辨识及与中医体质相关疾病的防治质量化辨识与调养指导旨在为体质辨识及与中医体质相关疾病的防治、养生保健、健康管理提供依据，"
+                android:textColor="@color/cs_333333"
+                android:textSize="25sp" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_kaishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/kaishi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="开始测评"
+                android:textColor="@color/cs_fe8200"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/touming_bg">
+
+        <TextView
+            style="@style/count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="技术支持：正生集团"
+            android:textColor="@color/cs_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
