@@ -195,17 +195,17 @@
             android:layout_marginTop="20dp"
             android:layout_below="@+id/tv_timu"
             android:layout_marginLeft="300dp"
-            android:layout_width="155dp"
-            android:layout_height="60dp"
+            android:layout_width="165dp"
+            android:layout_height="67dp"
             android:background="@mipmap/ic_next"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="上一题"
-                android:layout_marginLeft="45dp"
+                android:layout_marginLeft="47dp"
                 android:textColor="@color/cs_ffffff"
-                android:textSize="25sp"
+                android:textSize="28sp"
                 android:layout_centerVertical="true"/>
         </RelativeLayout>
         <RelativeLayout
@@ -214,8 +214,8 @@
             android:layout_marginTop="100dp"
             android:layout_below="@+id/rl_shang"
             android:layout_marginLeft="300dp"
-            android:layout_width="155dp"
-            android:layout_height="60dp"
+            android:layout_width="165dp"
+            android:layout_height="67dp"
             android:background="@mipmap/ic_next"
             >
             <TextView
@@ -223,9 +223,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="下一题"
-                android:layout_marginLeft="45dp"
+                android:layout_marginLeft="47dp"
                 android:textColor="@color/cs_ffffff"
-                android:textSize="25sp"
+                android:textSize="28sp"
                 android:layout_centerVertical="true"/>
         </RelativeLayout>
     </RelativeLayout>

@@ -65,7 +65,7 @@ public class StrokeTextView2 extends TextView {
             m_TextPaint.setStrokeWidth(2); // 描边宽度
             m_TextPaint.setStyle(Paint.Style.FILL_AND_STROKE); // 描边种类
             m_TextPaint.setFakeBoldText(false); // 外层text采用粗体
-            m_TextPaint.setShadowLayer(1, 1, 0, Color.parseColor("#70000000")); // 字体的阴影效果，可以忽略
+            m_TextPaint.setShadowLayer(1, 2, 0, Color.parseColor("#70000000")); // 字体的阴影效果，可以忽略
             super.onDraw(canvas);
 
             // 描内层，恢复原先的画笔

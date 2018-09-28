@@ -105,7 +105,7 @@
                 android:text="是痰湿质是痰湿质是淤血质是淤血质，是淤血质，是特禀质，倾向是痰湿质，是淤血质，是特禀质，倾向"
                 android:textSize="36sp"
                 android:visibility="visible"
-                app:innnerColor="#f4aa5c"
+                app:innnerColor="#f79a39"
                 app:outerColor="@color/cs_fa8f1f" />
             </RelativeLayout>
     </RelativeLayout>

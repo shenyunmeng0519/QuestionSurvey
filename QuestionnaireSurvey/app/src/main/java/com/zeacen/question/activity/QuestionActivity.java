@@ -14,6 +14,7 @@ import com.zeacen.question.bean.Question;
 import com.zeacen.question.bean.ResultBean;
 import com.zeacen.question.bean.TiZhiDetail;
 import com.zeacen.question.comm.StrokeTextView;
+import com.zeacen.question.utils.CustomToast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -82,7 +83,7 @@ public class QuestionActivity extends BaseActivity implements View.OnClickListen
             "{\"type\":\"阴虚\",\"eid\":\"30\",\"problem\":\"  您感到眼睛干涩吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
             "{\"type\":\"阴虚\",\"eid\":\"31\",\"problem\":\"  您活动量稍大就容易出虚汗吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
             "{\"type\":\"痰湿\",\"eid\":\"32\",\"problem\":\"  您感到胸闷或腹部胀满吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
-            "{\"type\":\"痰湿\",\"eid\":\"33\",\"problem\":\"  您感到身体学生不轻松或不爽快吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
+            "{\"type\":\"痰湿\",\"eid\":\"33\",\"problem\":\"  您感到身体沉重不轻松或不爽快吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
             "{\"type\":\"痰湿\",\"eid\":\"34\",\"problem\":\"  您腹部肥满松软吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
             "{\"type\":\"痰湿\",\"eid\":\"35\",\"problem\":\"  您有额部油脂分泌多的现象吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
             "{\"type\":\"痰湿\",\"eid\":\"36\",\"problem\":\"  您上眼睑比别人肿（仍轻微隆起的现象）吗？\",\"trueanswer\":\"A\",\"isChecked\":\"-1\""+"}," +
@@ -366,26 +367,30 @@ public class QuestionActivity extends BaseActivity implements View.OnClickListen
                 break;
             case R.id.rl_xia:
                 //checkAnswer();
-                if (corrent < count -1) {
-                    corrent++;
-                    tv_num.setText("【"+(corrent+ 1)+"/"+list.size()+"】");
-                    tv_timu.setText(corrent + 1 +". " + list.get(corrent).getTitle());
-                    for(int i=0;i<5;i++) {
-                        mImageView[i].setVisibility(View.GONE);
-                        mTextView[i].setTextColor(getResources().getColor(R.color.cs_333333));
+                if(list.get(corrent).getAnswerNum()>0) {
+                    if (corrent < count - 1) {
+                        corrent++;
+                        tv_num.setText("【" + (corrent + 1) + "/" + list.size() + "】");
+                        tv_timu.setText(corrent + 1 + ". " + list.get(corrent).getTitle());
+                        for (int i = 0; i < 5; i++) {
+                            mImageView[i].setVisibility(View.GONE);
+                            mTextView[i].setTextColor(getResources().getColor(R.color.cs_333333));
 
-                        if (list.get(corrent).getSelectedAnswerId() == i){
-                            mImageView[i].setVisibility(View.VISIBLE);
-                            mTextView[i].setTextColor(getResources().getColor(R.color.cs_ffffff));
+                            if (list.get(corrent).getSelectedAnswerId() == i) {
+                                mImageView[i].setVisibility(View.VISIBLE);
+                                mTextView[i].setTextColor(getResources().getColor(R.color.cs_ffffff));
 
+                            }
                         }
+                        if (corrent == count - 1) {
+                            //提示已是最后一题
+                            tv_xia.setText("  完成");
+                        }
+                    } else if (corrent == count - 1) {
+                        checkAnswer();
                     }
-                    if (corrent == count - 1){
-                        //提示已是最后一题
-                        tv_xia.setText("  完成");
-                    }
-                }else if(corrent == count - 1){
-                    checkAnswer();
+                }else {
+                    CustomToast.showToast(QuestionActivity.this,"您还未选择选项！");
                 }
                 break;
         }

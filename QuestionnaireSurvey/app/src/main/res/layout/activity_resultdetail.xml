@@ -22,12 +22,12 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="700dp"
+        android:layout_width="750dp"
         android:layout_height="match_parent"
         android:layout_below="@+id/rl_touming"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:background="@mipmap/huajuan">
         <com.zeacen.question.comm.StrokeTextView3
             android:id="@+id/iv_ganyu"
@@ -36,20 +36,20 @@
             android:textSize="36sp"
             android:textColor="@color/cs_333333"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="75dp"
             android:text="体质干预方案"
             app:innnerColor="@color/cs_333333"
             app:outerColor="@color/cs_333333"
             />
         <ScrollView
             android:layout_below="@+id/iv_ganyu"
-            android:layout_above="@+id/zixun"
+            android:layout_above="@+id/tv_zixun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fadeScrollbars="false"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="90dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="95dp"
             android:layout_marginBottom="10dp"
             android:scrollbarSize="5dp"
             android:scrollbarThumbVertical="@color/cs_999999"
@@ -65,8 +65,23 @@
                 android:textColor="@color/cs_333333"
                 android:textSize="25sp" />
         </ScrollView>
+        <com.zeacen.question.comm.StrokeTextView
+            android:id="@+id/tv_zixun"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【更多信息，请咨询您的健康管理师】"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:outerColor="@color/cs_66333333"
+            app:innnerColor="@color/cs_fe8200"
+            style="@style/jieguo_text"
+            android:layout_marginBottom="94dp"
+            android:layout_centerHorizontal="true"/>
         <ImageView
             android:id="@+id/zixun"
+            android:visibility="gone"
             android:layout_width="300dp"
             android:layout_height="45dp"
             android:scaleType="fitXY"
